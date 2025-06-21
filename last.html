@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Anniversary</title>
+  <link rel="stylesheet" href="last.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header"></div>
+  <div class="container">
+    <div class="video">
+      <video autoplay loop playsinline controls>
+        <source src="WhatsApp Video 2025-06-21 at 21.38.00.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <br><br><br><br><br>
+    <div class="wishes">
+  <h1 class="line">Happy Anniversary</h1>
+  <p class="line">to our couple</p>
+  <div class="wish-lines">
+    <p class="line">I Love You</p>
+    <p class="line">I want You</p>
+    <p class="line">I need You</p>
+    <p class="line">I want to live with You</p>
+    <p class="line">I want to marry You</p>
+    <p class="line">I want to have children with You</p>
+    <p class="line">I want to grow old with You</p>
+    <p class="line">We'll celebrate 1000's of anniversaries together</p>
+    <p class="line">I miss You</p>
+    <p class="line">I love you sooooooo much</p>
+    <p class="line final-line">Happy One Year Anniversary Nanaaaaaaa ❤️</p>
+    <p class="line tag">~ Jagratha</p>
+  </div>
+</div>
+</div>
+
+  </div>
+  <script>
+  const lines = document.querySelectorAll('.line');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, {
+    threshold: 1
+  });
+
+  lines.forEach(line => {
+    observer.observe(line);
+  });
+</script>
+
+
+</body>
+</html>

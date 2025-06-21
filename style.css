@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #ffe3f3;
+    color: #1a1a1a;
+}
+.header {
+    margin: 0;
+    text-align: center;
+    background-image: url('head1.png');
+    background-size: cover;        /* Scales image to fill container without distortion */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    height: 13.5vh;                  /* Adjust as needed */
+    width: 100vw;                  /* Full screen width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 2vw;
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+/* Login Card */
+.login-card {
+  background-color: #ffa08d;
+  width: 90vw;
+  max-width: 500px;
+  margin: 5vh auto;
+  padding: 5vh 6vw;
+  border-radius: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emoji{
+    background-image: url('fc578b392d04c6885249f36413da7cbf-removebg-preview.png');
+    background-size: cover;        /* Scales image to fill container without distortion */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    height: 18vh;                  /* Adjust as needed */
+    width: 10vw;                  /* Full screen width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-fields {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 2vh 0 1vh;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 1.5vh 2vw;
+  font-size: 1vw;
+  border-radius: 2vw;
+  background-color: #fff4d9;
+  border: 2px solid #ffafaf;
+  box-shadow: inset 0 0 0 2px #ff4d8b;
+}
+
+/* Button */
+.click-btn {
+  position: relative;
+  background-color: #ff3d2e;
+  color: white;
+  padding: 1.5vh 4vw;
+  border: none;
+  border-radius: 3vw;
+  font-size: 2vw;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateX(40vw);
+}
+
+.heart-pop {
+  position: absolute;
+  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  font-size: 2vw;
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.click-btn:hover .heart-pop {
+  transform: translateX(-50%) scale(1.2);
+  opacity: 1;
+}
+.click-btn:hover{
+    color: #ff3d2e;
+}

@@ -1,0 +1,138 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #ffe3f3;
+      color: #1a1a1a;
+    }
+
+    .header {
+      margin: 0;
+      text-align: center;
+      background-image: url('head2.png');
+      background-size: cover;        /* Scales image to fill container without distortion */
+        background-position: center;   /* Centers the image */
+        background-repeat: no-repeat;  /* Prevents tiling */
+        height: 13.5vh;                  /* Adjust as needed */
+        width: 100vw;                  /* Full screen width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      padding: 4vh 2vw;
+      margin-bottom: 5vh;
+      position: relative;
+    }
+.total{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.heading{
+  font-size: 2vh;
+  color: #ff7ec7;
+  font-size: 6vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+.photo{
+  background-image: url('memories1.png');
+  background-size: cover;        /* Scales image to fill container without distortion */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat;  /* Prevents tiling */
+  height: 100vh;
+  width: 70vw;
+  border-radius: 15vh;
+}
+.story{
+  width: 60vw;
+  height: 80vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3vh;
+}
+.ss{
+  background-image: url('memories2.png');
+  background-size: cover;        /* Scales image to fill container without distortion */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat;
+  height: 130vh;
+  width: 70vw;
+}
+.footer {
+  height: 50vh;
+  width: 35vw;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  background-image: url('WhatsApp Image 2025-06-20 at 19.59.05.jpeg'); /* replace with actual full image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+.footer:hover {
+  filter: brightness(70%);
+}
+
+.footer::before,
+.footer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 33.3%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.footer::before {
+  top: 0;
+  background-image: url('memories_top.png'); /* top crop */
+}
+
+.footer::after {
+  bottom: 0;
+  height: 33.3%;
+  background-image: url('WhatsApp Image 2025-06-20 at 23.39.24.jpeg'); /* bottom crop */
+}
+
+.footer:hover::before,
+.footer:hover::after {
+  opacity: 1;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 2vh;
+  width: 100%;
+  text-align: center;
+  font-size: 3vh;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 2;
+  transform: translateY(-20vh);
+}
+
+.footer:hover .footer-text {
+  opacity: 1;
+}
+.footer-text2{
+  font-size: 3vh;
+  color:#ff7ec7;
+  height: 4vh;
+  width: 80vw;
+}
+.footer-text2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-size: 5vh;
+}

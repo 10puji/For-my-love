@@ -1,0 +1,89 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #ffe3f3;
+      color: #1a1a1a;
+    }
+
+    .header {
+      margin: 0;
+      text-align: center;
+      background-image: url('head2.png');
+      background-size: cover;        /* Scales image to fill container without distortion */
+        background-position: center;   /* Centers the image */
+        background-repeat: no-repeat;  /* Prevents tiling */
+        height: 13.5vh;                  /* Adjust as needed */
+        width: 100vw;                  /* Full screen width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      padding: 4vh 2vw;
+      margin-bottom: 5vh;
+      position: relative;
+    }
+.video video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 20px; /* optional */
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
+
+.wishes {
+  background-color: #ffe3f3;
+  text-align: center;
+  padding: 6vh 4vw;
+  font-family: 'Pacifico', cursive;
+  color: #ff4d8b;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.wishes h1 {
+  font-size: 6vh;
+  margin-bottom: 1vh;
+}
+
+.wishes p {
+  font-size: 3vh;
+  margin: 1vh 0;
+  line-height: 1.6;
+}
+
+.wish-lines {
+  margin-top: 4vh;
+}
+
+.final-line {
+  font-size: 4vh;
+  font-weight: bold;
+  color: #ff0055;
+  margin-top: 4vh;
+}
+
+.tag {
+  font-size: 2.5vh;
+  margin-top: 2vh;
+  color: #e60073;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+.line {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: all 2s ease-out;
+  will-change: opacity, transform;
+}
+
+.line.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
